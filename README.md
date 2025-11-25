@@ -1,40 +1,72 @@
-# Brain-Bridge
-Brain Bridge is a simplified command-line Educational Help System designed to manage student records, course grades, and perform basic class statistics. It uses different login views for Teachers and Students to control data access and provides features like calculating class averages, checking enrollment, and generating project team combinations.
-# BRAIN BRIDGE: Educational Help System v0.1.1
-## Project Overview
-BRAIN BRIDGE is a command-line application designed to simulate a simple academic records system. It allows teachers to manage student scores, calculate class averages and standard deviations, and allows students to view their grades. The project demonstrates core Python OOP, set operations, and external library integration (NumPy, itertools).
+Brain Bridge: Command-Line Educational Help System
+Project Overview
+Brain Bridge is a simplified, command-line Educational Help System designed to manage student records, course grades, and perform basic class statistics. The project applies core concepts covered in the subject (e.g., modular design, data structures, file handling) within a practical scenario. It utilizes different login views for teachers and students to control data access.
 
-## Features 
-* Role-Based Access: Separate login flows for Teachers (credential-based) and Students (ID-based).
-* Grade Management: Teachers can enter/update student scores and credit hours, and the system performs automated letter grade conversion.
-* Class Analytics: Calculates class average and standard deviation (using NumPy) for specified courses.
-* Set Analysis: Analyzes mock enrollment data (Math vs. CS) using set difference and union operations.
-* Project Grouping: Generates possible 3-person project groups using `itertools.combinations`.
-* Individual Student View: Students can view their recorded scores, credits, and calculated GPA (placeholder).
 
-## Technologies/Tools Used 
-* Language: Python 3.x
-* Libraries: `numpy` (for standard deviation), `itertools` (for combinations)
-* Architecture: Command Line Interface (CLI) and In-Memory Data Storage (Python Dictionaries)
+Features
+This project incorporates the required three major functional modules:
 
-##  Steps to Install & Run the Project 
-1.  Prerequisites: Ensure you have Python 3.x installed.
-2.  Install Dependencies: This project requires NumPy. Run the following command:
-    ```bash
-    pip install numpy
-    ```
-3.  Run the System: Execute the main Python file:
-    ```bash
-    python main.py 
-    ```
-4.  Start: When prompted with `-->[ON/OFF]`, type `ON`.
+User Authentication and Management: Implements distinct login mechanisms for Teachers and Students. Teachers can perform CRUD operations on student records.
 
-##  Instructions for Testing
 
-### Teacher Credentials (Login: 1)
-* Username: `prof_vishal` / Password: `grade123`
-* Username: `dr_kavita` / Password: `math_pass`
 
-### Student IDs (Login: 2)
-* `25BCE10599` (PRATEEK DAS)
-* `25BCE0001` (Ram Kumar)
+Data Processing and Grade Management: Allows for data input of student grades and handles the processing of this data.
+
+Reporting and Analytics: Provides features like calculating class averages, checking enrollment, and generating project team combinations.
+
+Technologies and Tools Used
+The following technologies and tools were utilized in the development of this project:
+
+Programming Language: Python [Customize this]
+
+Data Storage: CSV / JSON File System [Customize this]
+
+
+Version Control: Git & GitHub 
+
+Architectural Pattern: [e.g., Simple Modular Design, MVC if applicable - Customize this]
+
+Steps to Install and Run the Project
+This section provides a clear, logical workflow for interacting with the system.
+
+
+Clone the Repository:
+
+Bash
+
+git clone https://github.com/dev-pd-1525/brain-bridge.git
+cd brain-bridge
+Set up the Environment (if required):
+
+Bash
+
+# If using Python and virtual environments is required
+pip install -r requirements.txt
+Execute the Main Application File:
+
+Bash
+
+python main.py
+Initial Login Credentials (Example):
+
+Teacher: admin / password123
+
+Student: S101 / pass
+
+Instructions for Testing
+The system implements validation and error handling. Testing should focus on verifying functional requirements and robustness:
+
+
+Functional Verification:
+
+Log in as a Teacher and successfully add a new student record and update an existing student's grade.
+
+Generate a Class Average Report and confirm the results are accurate.
+
+Access Control Testing:
+
+Log in as a Student and attempt to access any Teacher-only function (e.g., deleting a record). The system must restrict access and provide an appropriate error message.
+
+Error Handling Testing:
+
+Attempt to input invalid data (e.g., letters where numbers are expected for a grade). The system should gracefully handle the error and prompt for re-entry.
