@@ -17,14 +17,12 @@ Reporting and Analytics: Provides features like calculating class averages, chec
 Technologies and Tools Used
 The following technologies and tools were utilized in the development of this project:
 
-Programming Language: Python [Customize this]
+Programming Language: Python 
 
-Data Storage: CSV / JSON File System [Customize this]
+Data Storage: CSV / JSON File System 
 
 
 Version Control: Git & GitHub 
-
-Architectural Pattern: [e.g., Simple Modular Design, MVC if applicable - Customize this]
 
 Steps to Install and Run the Project
 This section provides a clear, logical workflow for interacting with the system.
